@@ -19,13 +19,14 @@
 .main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    height: 100vh;
 }
 
 .sidebar {
     grid-column: 1;
     display: grid;
     background-color: var(--sidebar-btn-bg-color);
-    height: 100vh;
+    height: 100%;
     grid-template-rows: 1fr 5fr 8fr;
     padding: 2vw;
 }
@@ -88,4 +89,90 @@ svg {
     color: var(--font-secondary-color);
     font-weight: 700;
     cursor: pointer;
+}
+
+
+/* Main section styles */
+.main-section {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+    grid-row: 1;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 20px 40px;
+}
+
+.search-bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .search-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    
+        > input {
+            appearance: none;
+            outline: none;
+            border: none;
+            background-color: var(--main-section-bg-color);
+            border-radius: 15px;
+            height: 30px;
+            width: 35vw;
+            padding: 0 10px;
+            align-items: center;
+        }
+    
+        > svg {
+            fill: var(--font-primary-color);
+            width: 18px;
+        }
+    }
+
+    > .user-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+
+        > svg {
+            fill: var(--font-primary-color);
+            width: 24px;
+        }
+
+        > .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--font-primary-color);
+            background-color: #fff;
+            border-radius: 15px;
+            width: 30px;
+            height: 30px;
+            
+            > svg {
+                fill: var(--font-primary-color);
+                width: 24px;
+            } 
+        }
+
+        > span {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--font-primary-color);
+        }
+    }
+
+}
+
+
+.main {
+    grid-row: 2;
+    background-color: var(--main-section-bg-color);
 }
