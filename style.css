@@ -110,6 +110,7 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 
     > .search-section {
         display: flex;
@@ -163,7 +164,7 @@ svg {
         }
 
         > span {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
             color: var(--font-primary-color);
         }
@@ -171,6 +172,53 @@ svg {
 
 }
 
+.name-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    > .greet-user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        > svg {
+            fill: var(--font-primary-color);
+            width: 3em;
+        }
+
+        >.greeting-wrapper {
+            
+            > p {
+                font-size: 0.8em;
+                font-weight: 600;
+                color: var(--font-primary-color);
+            }
+
+            > h4 {
+                font-size: 1.3em;
+                color: var(--font-primary-color);
+            }
+        }
+    }
+
+    > .btn-wrapper {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        > button {
+            width: 5rem;
+            padding: 10px 0;
+            border: none;
+            background-color: var(--sidebar-btn-bg-color);
+            border-radius: 20px;
+            color: var(--font-secondary-color);
+            font-weight: 600;
+        }
+    }
+}
 
 .main {
     grid-row: 2;
