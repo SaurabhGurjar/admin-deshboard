@@ -17,10 +17,13 @@
     font-family: 'Open Sens', sans-serif;
 }
 
+body {
+    background-color: var(--main-section-bg-color);
+}
 .main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    background-color: var(--main-section-bg-color);
+    width: 100%;
 }
 
 .sidebar {
@@ -28,7 +31,7 @@
     display: grid;
     background-color: var(--sidebar-btn-bg-color);
     height: 100%;
-    grid-template-rows: 1fr 3fr 8fr;
+    grid-template-rows: 80px 265px 200px;
     padding: 2vw;
 }
 
